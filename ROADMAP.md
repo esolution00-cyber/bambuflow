@@ -13,12 +13,23 @@ This roadmap reports intended work. It is not a promise of release dates or comp
 - [x] reproducible JSON dossier;
 - [ ] public issue templates.
 
+## R12.4 · Machine-profile conversion
+
+- [x] detect the machine identity embedded in the source 3MF;
+- [x] show an explicit warning when source and selected target differ;
+- [x] convert compatible Bambu-origin projects to resolved official H2S or H2C machine and process profiles;
+- [x] reconcile supported Bambu filament identities while preserving project colours;
+- [x] remove source G-code, checksums and slicing metadata before download;
+- [x] preserve the model geometry byte-for-byte in the verified conversion case;
+- [x] open the exact downloaded H2S and H2C candidates in Bambu Studio 02.08.04.61;
+- [ ] re-slice and inspect each release candidate in Bambu Studio Preview before production use.
+
 ## R13 · Comparable optimization evidence
 
 - [ ] controlled original/candidate slicing with the same supported slicer build;
 - [ ] comparison of time, material, layers, supports, pauses, tool changes and Z height;
 - [ ] automatic rejection and cleanup when a candidate has no measurable advantage;
-- [ ] Mac Bambu Studio Preview validation of the exact candidate;
+- [ ] Mac Bambu Studio Preview validation after comparable re-slicing of the exact candidate;
 - [ ] first documented physical qualification case.
 
 ## GitHub integration

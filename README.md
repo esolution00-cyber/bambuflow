@@ -1,6 +1,6 @@
 # BambuFlow by e-solution
 
-**Public technical preview · R12**
+**Public technical preview · R12.4**
 
 [Open the public preview](https://bambuflow.esolution.it/) · [e-solution](https://www.esolution.it/)
 
@@ -32,17 +32,20 @@ Our preferred long-term direction is to mature the system through a direct techn
 - local inspection of a selected 3MF file in the browser;
 - defensive checks on the ZIP/3MF container before reading its structure;
 - recognition of core 3MF parts and available Bambu metadata;
+- explicit detection of the source-machine identity and source/target mismatches;
 - guided configuration for the e-solution Bambu Lab H2S and H2C workflow;
+- controlled conversion of compatible Bambu-origin projects to resolved official H2S or H2C machine, process and filament identities;
+- removal of source slicing artefacts before the converted candidate is downloaded, so an old machine's G-code cannot be carried into the new project;
 - selection of one or more priorities, including quality, strength, speed, finish and precision;
 - nine explicit preflight gates;
 - a separate hand-off checklist for Bambu Studio Preview;
 - export of a reproducible JSON dossier after the required gates are complete.
 
-The selected file remains in the browser during the public preflight. The public interface does not start a printer, send G-code, modify a machine, or silently change an installed preset.
+The selected file remains in the browser during the public preflight. A converted candidate preserves the model geometry and must be sliced again and inspected in Bambu Studio Preview. The public interface does not start a printer, send G-code, modify a machine, or silently change an installed preset.
 
 ## What is still under development
 
-- generation of an optimization candidate through the private engine;
+- measurable optimization candidates beyond the current machine-profile conversion;
 - same-version slicing of original and candidate;
 - comparative G-code evidence for time, material, layers, supports, pauses, tool changes and Z height;
 - automatic rejection of candidates without a measurable advantage;
@@ -98,7 +101,8 @@ No license is granted to reuse the BambuFlow or e-solution names, visual identit
 
 ## Status and feedback
 
-Current public revision: **R12 technical preview**  
+Current public revision: **R12.4 technical preview**
+
 Primary URL: [https://bambuflow.esolution.it/](https://bambuflow.esolution.it/)
 
 Technical feedback may be submitted through this repository after the public issue templates are activated. Commercial or production enquiries should use the official [e-solution website](https://www.esolution.it/).
@@ -111,7 +115,7 @@ Bambu Lab, Bambu Studio and the names of Bambu Lab products are trademarks of th
 
 ## Sintesi in italiano
 
-BambuFlow è un progetto indipendente di e-solution per controllare file 3MF, definire priorità di ottimizzazione e preparare un percorso di verifica riproducibile attraverso Bambu Studio Preview. La versione pubblica R12 è un'anteprima tecnica: non controlla la stampante, non avvia stampe e non dichiara ancora le candidate come file di produzione ottimizzati.
+BambuFlow è un progetto indipendente di e-solution per controllare file 3MF, definire priorità di ottimizzazione e preparare un percorso di verifica riproducibile attraverso Bambu Studio Preview. La versione pubblica R12.4 riconosce la macchina sorgente e può convertire progetti Bambu compatibili verso profili ufficiali risolti H2S o H2C, preservando la geometria ed eliminando gli artefatti di slicing precedenti. È ancora un'anteprima tecnica: non controlla la stampante, non avvia stampe e non dichiara le candidate come file di produzione ottimizzati.
 
 Il metodo mantiene distinti preflight del file, slicing comparabile, lettura del G-code, Preview, prova fisica e autorizzazione alla stampa.
 
