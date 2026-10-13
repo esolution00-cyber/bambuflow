@@ -24,6 +24,14 @@ This roadmap reports intended work. It is not a promise of release dates or comp
 - [x] open the exact downloaded H2S and H2C candidates in Bambu Studio 02.08.04.61;
 - [ ] re-slice and inspect each release candidate in Bambu Studio Preview before production use.
 
+## R12.7.2 · ScalaForge 3MF hand-off
+
+- [x] validate the synthetic ScalaForge package structure and Bambu Studio project envelope before candidate generation;
+- [x] verify browser preflight (10/10), H2S-target candidate generation/download and 3MF archive integrity on the synthetic fixture;
+- [x] verify Bambu Studio Preview separately on the canonical equivalent candidate;
+- [ ] inspect the exact candidate downloaded from the public hand-off in Bambu Studio Preview;
+- [ ] test representative real projects and complete any required physical qualification; no physical result is claimed by the synthetic test.
+
 ## R13 · Comparable optimization evidence
 
 - [ ] controlled original/candidate slicing with the same supported slicer build;
